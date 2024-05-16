@@ -6,52 +6,57 @@
     <link href="CSS/bootstrap.min.css" rel="stylesheet" />
     <link href="CSS/style.css" rel="stylesheet" />
     <title>CRUD</title>
-
   </head>
   <body>
-    
-    <main
-      class="d-flex flex-column align-items-center  justify-content-center"
-    >
- 
+    <main class="d-flex flex-column align-items-center justify-content-center">
       <section class="bg-blue-dark p-5 w-50 mt-5">
         <h1 class="text-center text-light">CRUD Operation</h1>
 
-        <div class="form-floating mb-3 mt-5  ">
+        <div class="form-floating mb-3 mt-3">
           <input
-            type="email"
-            class="form-control fw-bold bg-light"
-            id="floatingInput"
-            placeholder="name@example.com"
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Name"
           />
-          <label for="floatingInput">Email address</label>
+          <label for="floatingInput">Name</label>
         </div>
         <div class="form-floating mb-3">
           <input
-            type="password"
+            type="number"
             class="form-control"
-            id="floatingPassword"
-            placeholder="Password"
+            id="price"
+            placeholder="price"
           />
-          <label for="floatingPassword">Password</label>
+          <label for="floatingPassword">Price</label>
         </div>
 
         <div class="form-floating mb-3">
           <input
-            type="password"
+            type="text"
             class="form-control"
-            id="floatingPassword"
-            placeholder="Password"
+            id="category"
+            placeholder="category"
           />
-          <label for="floatingPassword">Password</label>
+          <label for="floatingPassword">Category</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="description"
+            placeholder="Description"
+          />
+          <label for="floatingPassword">Description</label>
         </div>
 
-        <div class="mb-3">
+        <div class="mb-2">
           <label for="formFile" class="form-label text-light"
             >Default file input example</label
           >
           <input class="form-control" type="file" id="formFile" />
         </div>
+        <button  class="btn btn-primary"> Add Product</button>
       </section>
     </main>
   </body>
