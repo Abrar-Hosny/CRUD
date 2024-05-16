@@ -27,8 +27,20 @@ function addProduct(){
         productcategorie:productCategorie.value , 
         productdescription:productDescription.value,
         productimage:productPrice.value
-            })
+            });
 console.log(productList)
+clearInputs();
 
 }
+
+// the function only one task 
+
+function clearInputs(){
+    productName.value =null;
+    productPrice.value =null;
+    productCategorie.value =null;
+    productDescription.value =null;
+productImage.value=null; 
+}
+
 
