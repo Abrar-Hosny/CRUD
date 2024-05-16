@@ -17,3 +17,18 @@ var productImage=document.getElementById("productImage")
 
 // test every step
 // console.log(productName,productPrice,productCategorie,productDescription,productImage);
+
+// cartoon
+var productList =[];
+
+function addProduct(){
+    productList.push({productname:productName.value , 
+        productprice:productPrice.value, 
+        productcategorie:productCategorie.value , 
+        productdescription:productDescription.value,
+        productimage:productPrice.value
+            })
+console.log(productList)
+
+}
+
