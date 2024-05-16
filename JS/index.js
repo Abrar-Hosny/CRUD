@@ -14,7 +14,7 @@ var productPrice = document.getElementById("productPrice");
 var productCategorie = document.getElementById("productCategorie");
 var productDescription = document.getElementById("productDescription");
 var productImage=document.getElementById("productImage")
-
+var displayProduct =document.getElementById("display");
 // test every step
 // console.log(productName,productPrice,productCategorie,productDescription,productImage);
 
@@ -34,13 +34,42 @@ clearInputs();
 }
 
 // the function only one task 
-
+// 2- clear inputs
 function clearInputs(){
+    display();
+
     productName.value =null;
     productPrice.value =null;
     productCategorie.value =null;
     productDescription.value =null;
 productImage.value=null; 
+}
+
+
+// 3- display
+
+
+function display(){
+    for(var i = 0 ; i<productList.length;i++){
+
+displayProduct.innerHTML=`
+<div class="card" style="width: 18rem;">
+  <img src="${productList[i].productimage}" class="card-img-top" alt="productimage">
+  <div class="card-body">
+    <h5 class="card-title">Nameproduct ${productList[i].productname}</h5>
+    <p class="card-text">Price ${productList[i].productprice}</p>
+    <p class="card-text">Categorie ${productList[i].productcategorie}</p>
+    <p class="card-text">Description ${productList[i].productdescription}</p>
+   
+  </div>
+
+ 
+</div>
+
+`
+
+    }
+
 }
 
 
