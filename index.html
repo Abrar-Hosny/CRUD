@@ -9,7 +9,7 @@
   </head>
   <body>
     <main class="d-flex flex-column align-items-center justify-content-center">
-      <section class="bg-blue-dark p-5 w-50 mt-5">
+      <section class="bg-blue-dark p-5 w-25 mt-5">
         <h1 class="text-center text-light">CRUD Operation</h1>
 
         <div class="form-floating mb-3 mt-3">
@@ -51,20 +51,34 @@
         </div>
 
         <div class="mb-2">
-          <label for="productImage" class="form-label text-light">Default file input example</label>
-          <input class="form-control"  accept="image/*" type="file" id="productImage" />
+          <label for="productImage" class="form-label text-light"
+            >Default file input example</label
+          >
+          <input
+            class="form-control"
+            accept="image/*"
+            type="file"
+            id="productImage"
+          />
         </div>
-        <button onclick="addProduct()"  class="btn btn-primary"> Add Product</button>
+        <button onclick="addProduct()" class="btn btn-primary">
+          Add Product
+        </button>
       </section>
-    <section id="display">
-      
-    </section>
-    
+      <section>
+        <input id="search" oninput="search()"  class="form-control my-3" type="text" placeholder="search...">
+      </section>
+        
+
+<section>
+  <div class="conatiner ">
+    <div id="display" class="row">
+    </div>
+  </div>
+</section>
+
     </main>
 
-
-
-    <script src="JS/index.js">
-    </script>
+    <script src="JS/index.js"></script>
   </body>
 </html>
